@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jarancibia/minipostiz-cli.git"
+    "url": "https://github.com/javimosch/minipostiz-cli.git"
   },
   "files": [
     "src/",
