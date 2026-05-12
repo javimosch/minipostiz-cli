@@ -1,0 +1,24 @@
+{
+  "name": "minipostiz-cli",
+  "version": "0.1.0",
+  "description": "Offline social media scheduler — agent-first, SQLite-backed, zero cloud deps. Supercli plugin.",
+  "type": "module",
+  "keywords": ["social-media", "scheduler", "cli", "supercli", "sqlite", "offline", "twitter", "bluesky", "mastodon", "discord", "telegram", "linkedin"],
+  "author": "Javier Leandro Arancibia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jarancibia/minipostiz-cli.git"
+  },
+  "files": [
+    "src/",
+    "plugin.json",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "bun run src/main.ts",
+    "build": "bun build src/main.ts --compile --outfile bin/minipostiz",
+    "postinstall": "bun build src/main.ts --compile --outfile bin/minipostiz 2>/dev/null || true",
+    "daemon": "bun run src/daemon.ts"
+  }
+}
